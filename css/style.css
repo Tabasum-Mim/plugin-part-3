@@ -1,0 +1,108 @@
+.slider1 .item{
+	border: 5px solid skyblue;
+}
+.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next, .owl-carousel button.owl-dot {
+    font-size: 40px;
+    color: skyblue;
+}
+.slider2 .item{
+	text-align: center;
+	border: 5px solid skyblue;
+}
+
+/*slick slider*/
+.multiple-items .slider{
+	background-color: skyblue;
+	border: 5px solid blue;
+	height: 80px;
+	text-align: center;
+}
+.slick-prev, .slick-next {
+    color: white !important;
+    background-color: skyblue;
+    border-radius: 50%;
+}
+.slick-prev.slick-disabled:before, .slick-next.slick-disabled:before {
+    opacity: 5;
+}
+.slick-prev::before {
+    content: "<";
+    color: white;
+}
+.slick-next::before {
+    content: ">";
+    color: white;
+}
+.slick-dots li button {
+    font-size: 20px;
+    color: blue;
+}
+.autoplay .slider{
+	background-color: skyblue;
+	border: 5px solid blue;
+	height: 80px;
+	text-align: center;
+}
+/*isotope plugin*/
+.menu{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+.menu li{
+	padding: 10px 30px;
+	border: 1px solid red;
+	cursor: pointer;
+}
+.menu li:hover{
+	background-color: orange;
+}
+.single-img{
+	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
+}
+.single-img:hover .overlay{
+	top: 0;
+}
+.overlay{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	transition: .3s;
+}
+.overlay::before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: black;
+	opacity: .5;
+	z-index: -1;
+}
+.overlay h4{
+	text-transform: uppercase;
+}
+.overlay p{
+	font-style: italic;
+}
+/*.grid-item { 
+	width: 30%; 
+	height: 50px;
+	margin: 5px;
+	border: 1px solid black;
+	background-color: blue;
+	color: white;
+	text-align:center;
+}
